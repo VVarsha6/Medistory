@@ -27,4 +27,14 @@ body {
     background-color: #f1f1f1;
     padding: 10px;
   }
+
+  .landing-button{
+    background-color: aqua;
+  }
+
+  .landing-page{
+    justify-content: center;
+    align-items: center;
+
+  }
   
