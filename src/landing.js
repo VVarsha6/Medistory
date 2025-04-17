@@ -4,12 +4,19 @@ import './App.css';
 
 function Landing(){
     return(
-   <div className="landing-page">
-        <h1>Welcome to Medistory</h1>
-        <Link to="/App">
-        <Button className="landing-button">Chat Page</Button>
-        </Link>
-    </div>
+    <div>
+        <div className="landing-page">
+            <h1 color="white">Welcome to Medistory</h1>
+        </div>
+        <div>
+            <Link to="/App">
+            <Button className="landing-button">Chat Page</Button>
+            </Link>
+            <Link to="/noteGen">
+            <Button className="landing-button">Generate Note</Button>
+            </Link>
+        </div>
+    </div> 
     )
 }
 

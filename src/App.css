@@ -30,11 +30,15 @@ body {
 
   .landing-button{
     background-color: aqua;
+    height: 50vh;
+    width: 50vh;
   }
 
   .landing-page{
     justify-content: center;
     align-items: center;
-
+    background-color: blue;
+    height: 10vh;
+    width: 50vh;
   }
   
