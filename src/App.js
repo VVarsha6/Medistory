@@ -21,20 +21,42 @@ function LoginPage({ onLogin }) {
     </div>
   );
 }
+/*
+ <>
+        <nav className="nav">
+        <Link to="/" className="site-title">Medistory</Link>
+        <ul>
+            <li >
+                <Link to="/App">Chat Page</Link>
+            </li>
+            <li>
+                <Link to="/NoteGen">Note Generator</Link>
+            </li>
+        </ul>
+    </nav>
+    <h1>Welcome, John Doe</h1>
+    </>
+    <button onClick={onUpload} style={styles.outlineButton}>Upload Audio</button>
+        <button onClick={onStart} style={styles.primaryButton}>Chat</button>
+*/
 
 function LandingPage({ onStart, onUpload }) {
   return (
-    <div style={styles.page}>
-      <div style={styles.waves}></div>
-      <h1 style={styles.title}>Medistory</h1>
-      <p style={styles.description}>
-        Your AI medical transcription companion. Upload audio or start chatting!
-      </p>
-      <div style={styles.buttonGroup}>
-        <button onClick={onUpload} style={styles.outlineButton}>Upload Audio</button>
-        <button onClick={onStart} style={styles.primaryButton}>Chat</button>
-      </div>
-    </div>
+    <>
+        <nav className="nav">
+          <h1>Medistory</h1>
+        <ul>
+            <li >
+            <button onClick={onUpload} className='navButton'>Upload Audio</button>
+            </li>
+            <li>
+            <button onClick={onStart}>Chat</button>
+*/
+            </li>
+        </ul>
+    </nav>
+    <h1>Welcome, John Doe</h1>
+    </>
   );
 }
 
