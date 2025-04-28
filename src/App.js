@@ -8,10 +8,6 @@ import UploadScreen from './UploadScreen';
 
 
 
-
-
-
-
 function App() {
   const [screen, setScreen] = useState('login');
 
