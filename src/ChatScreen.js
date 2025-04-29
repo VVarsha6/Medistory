@@ -5,8 +5,9 @@ import {
     MessageList,
 } from '@chatscope/chat-ui-kit-react';
 import '@chatscope/chat-ui-kit-styles/dist/default/styles.min.css';
-import React, { useState } from 'react';
+import React, { use, useState } from 'react';
 import './App.css';
+import { useNavigate } from 'react-router-dom';
   
   const styles = {
     backButton: {
@@ -22,6 +23,7 @@ import './App.css';
   };
   
   function ChatScreen({ onBack }) {
+    const navigate = useNavigate();
     const [messages, setMessages] = useState([
       { message: 'Medical SOAP Notes', sender: 'bot' },
       { message: 'How can I help you today?', sender: 'bot' },
@@ -34,7 +36,7 @@ import './App.css';
   
     return (
       <div style={{ height: '105vh', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-        <button onClick={onBack} style={styles.backButton}>← Back</button>
+        <button onClick={()=>navigate('/Landing')} style={styles.backButton}>← Back</button>
         <div style={{ height: '600px', width: '750px', marginTop: '2rem' }}>
           <ChatContainer>
             <MessageList>
