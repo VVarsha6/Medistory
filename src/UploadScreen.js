@@ -1,5 +1,6 @@
 import '@chatscope/chat-ui-kit-styles/dist/default/styles.min.css';
 import React, { useState } from 'react';
+import {useNavigate} from 'react-router-dom';
 import './App.css';
 
 const styles = {
@@ -66,6 +67,7 @@ const styles = {
 };
 
 function UploadScreen({ onBack, onUploadComplete }) {
+  const navigate=useNavigate();
   const [loading, setLoading] = useState(false);
   const [file, setFile] = useState(null);
 
@@ -84,7 +86,7 @@ function UploadScreen({ onBack, onUploadComplete }) {
 
   return (
     <div style={styles.page}>
-      <button onClick={onBack} style={styles.backButton}>← Back</button>
+      <button onClick={()=>navigate('/Landing')} style={styles.backButton}>← Back</button>
       <div style={styles.card}>
         <h2 style={styles.title}>Upload Audio File</h2>
         <input type="file" accept="audio/*" onChange={handleFileChange} style={styles.input} />

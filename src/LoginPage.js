@@ -1,9 +1,12 @@
-
-  import React from 'react';
+import React from 'react';
+import {useNavigate} from 'react-router-dom';
 import './App.css';
 import './App.js';
+
+
   
   function LoginPage({ onLogin }) {
+    const navigate = useNavigate();
     return (
       <div style={styles.page}>
         <div style={styles.card}>
@@ -11,7 +14,7 @@ import './App.js';
           <p style={styles.subtitle}>Sign in to get started</p>
           <input type="email" placeholder="Email" style={styles.input} />
           <input type="password" placeholder="Password" style={styles.input} />
-          <button onClick={onLogin} style={styles.primaryButton}>Login</button>
+          <button onClick={()=>navigate('/Landing')} style={styles.primaryButton}>Login</button>
         </div>
       </div>
     );

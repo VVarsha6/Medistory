@@ -1,36 +1,31 @@
+import {
+  ChatContainer,
+  Message,
+  MessageInput,
+  MessageList,
+} from '@chatscope/chat-ui-kit-react';
 import '@chatscope/chat-ui-kit-styles/dist/default/styles.min.css';
+import ReactDOM from 'react-dom/client';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import React, { useState } from 'react';
 import './App.css';
-import ChatScreen from './ChatScreen';
-import LandingPage from './LandingPage';
-import LoginPage from './LoginPage';
+import Landing from './LandingPage';
 import UploadScreen from './UploadScreen';
+import LoginPage from './LoginPage';
+import ChatScreen from './ChatScreen';
+import SearchBar from './SearchBar';
 
-
-
-
-
-
-
-function App() {
-  const [screen, setScreen] = useState('login');
-
-  if (screen === 'login') return <LoginPage onLogin={() => setScreen('landing')} />;
-  if (screen === 'landing') return (
-    <LandingPage
-      onStart={() => setScreen('chat')}
-      onUpload={() => setScreen('upload')}
-    />
-  );
-  if (screen === 'upload') return (
-    <UploadScreen
-      onBack={() => setScreen('landing')}
-      onUploadComplete={() => setScreen('chat')}
-    />
-  );
-  return <ChatScreen onBack={() => setScreen('landing')} />;
+const App = () => {
+    return(
+      <Router>
+          <Routes>
+            <Route path='/' element={<LoginPage />}/>
+              <Route path="/Landing" element={<Landing />}/>
+              <Route path="/ChatScreen" element = {<ChatScreen />}/>
+              <Route path="/Upload" element = {<UploadScreen />}/>
+              <Route path="/SearchBar" element={<SearchBar />} />
+          </Routes>
+      </Router>
+    )
 }
-
-
-
-export default App;
+export default App
