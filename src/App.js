@@ -7,6 +7,9 @@ import {
 import '@chatscope/chat-ui-kit-styles/dist/default/styles.min.css';
 import React, { useState } from 'react';
 import './App.css';
+import searchBar from './searchBar';
+
+
 
 function LoginPage({ onLogin }) {
   return (
@@ -50,7 +53,7 @@ function LandingPage({ onStart, onUpload }) {
             <button onClick={onUpload} className='navButton'>Upload Audio</button>
             </li>
             <li>
-            <button onClick={onStart}>Chat</button>
+            <button onClick={searchBar}>Chat</button>
 */
             </li>
         </ul>
