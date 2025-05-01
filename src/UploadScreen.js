@@ -43,6 +43,7 @@ const styles = {
     borderRadius: '8px',
     cursor: 'pointer',
     fontSize: '1rem',
+    marginTop: '1rem',
   },
   backButton: {
     position: 'absolute',
@@ -68,9 +69,11 @@ const styles = {
 function UploadScreen({ onBack, onUploadComplete }) {
   const [loading, setLoading] = useState(false);
   const [file, setFile] = useState(null);
+  const [uploaded, setUploaded] = useState(false);
 
   const handleFileChange = (e) => {
     setFile(e.target.files[0]);
+    setUploaded(false); // Reset if a new file is selected
   };
 
   const handleUpload = () => {
@@ -78,7 +81,7 @@ function UploadScreen({ onBack, onUploadComplete }) {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-      onUploadComplete();
+      setUploaded(true);
     }, 3000); // Simulated upload delay
   };
 
@@ -86,12 +89,17 @@ function UploadScreen({ onBack, onUploadComplete }) {
     <div style={styles.page}>
       <button onClick={onBack} style={styles.backButton}>← Back</button>
       <div style={styles.card}>
-        <h2 style={styles.title}>Upload Audio File</h2>
-        <input type="file" accept="audio/*" onChange={handleFileChange} style={styles.input} />
+        <h2 style={styles.title}>Upload File</h2>
+        <input type="file" onChange={handleFileChange} style={styles.input} />
         <button onClick={handleUpload} style={styles.primaryButton} disabled={loading}>
           {loading ? 'Uploading...' : 'Upload'}
         </button>
         {loading && <div style={styles.spinner}></div>}
+        {uploaded && (
+          <button onClick={onUploadComplete} style={styles.primaryButton}>
+            Go to Chat
+          </button>
+        )}
       </div>
     </div>
   );
