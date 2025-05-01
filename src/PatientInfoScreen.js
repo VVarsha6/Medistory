@@ -40,12 +40,22 @@ const styles = {
     cursor: 'pointer',
   },
   uploadBtn: {
-    backgroundColor: '#6c63ff',
+    padding: '10px 20px',
+    backgroundColor: '#3d4dd4',
     color: '#fff',
+    border: 'none',
+    borderRadius: '8px',
+    cursor: 'pointer',
+    fontSize: '1rem',
   },
   chatBtn: {
-    backgroundColor: '#28a745',
-    color: '#fff',
+    padding: '10px 20px',
+    backgroundColor: '#fff',
+    color: '#3d4dd4',
+    border: '2px solid #3d4dd4',
+    borderRadius: '8px',
+    cursor: 'pointer',
+    fontSize: '1rem',
   },
 };
 

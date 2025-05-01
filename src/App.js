@@ -6,9 +6,9 @@ import ChatScreen from './ChatScreen';
 import LandingPage from './LandingPage';
 import LoginPage from './LoginPage';
 import NewPatientForm from './NewPatientForm';
+import PatientInfoScreen from './PatientInfoScreen';
 import UploadScreen from './UploadScreen';
 import SearchBar from './searchBar'; // Make sure this is imported
-import PatientInfoScreen from './PatientInfoScreen';
 
 
 function App() {

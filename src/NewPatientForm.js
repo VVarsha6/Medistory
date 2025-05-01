@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
+const NewPatientForm = ({ onBack }) => {
 
-const NewPatientForm = () => {
     
   const [formData, setFormData] = useState({
     firstName: '',
@@ -25,12 +25,14 @@ const NewPatientForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Handle form submission logic here
-    alert("New Patient Created!");
+    alert("New Patient with PATIENTID Created!");
   };
 
-   const handleBack = () => {
-    if (onBack) onBack();  // 3. Use the passed prop
+
+  const handleBack = () => {
+    if (onBack) onBack();
   };
+  
 
   const styles = {
     navbar: {
@@ -48,21 +50,19 @@ const NewPatientForm = () => {
         zIndex: 1000,
       },
       
-    page: {
-      height: '100vh',
-      padding: '2rem',
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: 'center',
-      backgroundColor: '#fff',
-      position: 'relative',
-    },
+      page: {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: '#fff',
+        position: 'relative',
+      },
     card: {
       backgroundColor: '#f9f9f9',
-      padding: '3rem',
+      padding: '6rem',
       borderRadius: '16px',
-      boxShadow: '0 10px 20px rgba(0,0,0,0.05)',
+      boxShadow: '0 10px 20px rgba(0,0,0,0.5)',
       textAlign: 'center',
       width: '100%',
       maxWidth: '400px',
@@ -81,19 +81,24 @@ const NewPatientForm = () => {
     input: {
       width: '100%',
       padding: '0.75rem',
-      fontSize: '0.8rem',
+      fontSize: '1rem',
       borderRadius: '8px',
       border: '1px solid #ddd',
+      boxSizing: 'border-box',
     },
+    
     primaryButton: {
-      padding: '0.85rem 1.5rem',
+      width: '100%',
+      padding: '0.75rem',
       backgroundColor: '#3d4dd4',
       color: '#fff',
-      border: 'none',
+      border: '1px solid #3d4dd4', // optional to match input border style
       borderRadius: '8px',
       cursor: 'pointer',
       fontSize: '1rem',
+      boxSizing: 'border-box',
     },
+    
     backButton: {
         position: 'absolute',
         left: '1rem',
@@ -118,7 +123,8 @@ const NewPatientForm = () => {
     
     <div style={styles.page}>
    <div style={styles.navbar}>
-  <button onClick={handleBack} style={styles.backButton}>← </button>
+   <button onClick={handleBack} style={styles.backButton}>← </button>
+
   <h2 style={styles.navTitle}> Medistory</h2>
 </div>
 
@@ -178,14 +184,7 @@ const NewPatientForm = () => {
             onChange={handleChange}
             style={styles.input}
           />
-          <input
-            type="date"
-            name="birthday"
-            placeholder="Birthday"
-            value={formData.birthday}
-            onChange={handleChange}
-            style={styles.input}
-          />
+    
           <button type="submit" style={styles.primaryButton}>Submit</button>
         </form>
       </div>

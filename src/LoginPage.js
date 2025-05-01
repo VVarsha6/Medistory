@@ -19,23 +19,25 @@ import './App.js';
   const styles = {
     page: {
       height: '100vh',
+      width: '150vh',
       padding: '2rem',
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
       justifyContent: 'center',
-      backgroundColor: '#fff',
+      backgroundColor: '#3d4dd4',
       position: 'relative',
     },
     card: {
       backgroundColor: '#f9f9f9',
-      padding: '3rem',
+      padding: '7rem',
       borderRadius: '16px',
       boxShadow: '0 10px 20px rgba(0,0,0,0.05)',
       textAlign: 'center',
     },
     title: {
       fontSize: '2.5rem',
+      font: 'Roboto' ,
       fontWeight: 'bold',
       marginBottom: '1rem',
       textAlign: 'center',
