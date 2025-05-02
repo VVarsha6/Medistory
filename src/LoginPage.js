@@ -25,11 +25,11 @@ import './App.js';
       flexDirection: 'column',
       alignItems: 'center',
       justifyContent: 'center',
-      backgroundColor: '#222222',
+      backgroundColor: 'white',
       position: 'relative',
     },
     card: {
-      backgroundColor: '#333333',
+      backgroundColor: 'white',
       padding: '7rem',
       borderRadius: '16px',
       boxShadow: '0 10px 20px rgba(0,0,0,0.05)',
@@ -41,7 +41,7 @@ import './App.js';
       fontWeight: 'bold',
       marginBottom: '1rem',
       textAlign: 'center',
-      color: 'white'
+      color: 'black'
     },
     subtitle: {
       fontSize: '1rem',
@@ -58,8 +58,8 @@ import './App.js';
     },
     primaryButton: {
       padding: '0.75rem 1.5rem',
-      backgroundColor: '#971b55',
-      color: '#fff',
+      backgroundColor: '#6ea8d7',
+      color: 'white',
       border: 'none',
       borderRadius: '8px',
       cursor: 'pointer',

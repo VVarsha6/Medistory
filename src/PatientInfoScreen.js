@@ -5,13 +5,13 @@ const styles = {
     height: '100vh',
     width: '100vw',
     padding: '2rem',
-    backgroundColor: '#222222',
+    backgroundColor: 'white',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
   },
   card: {
-    backgroundColor: '#333333',
+    backgroundColor: 'white',
     padding: '2.5rem',
     borderRadius: '12px',
     boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1)',
@@ -22,12 +22,12 @@ const styles = {
   heading: {
     fontSize: '1.8rem',
     marginBottom: '1rem',
-    color: 'white',
+    color: 'black',
   },
   info: {
     fontSize: '1.2rem',
     margin: '0.5rem 0',
-    color: 'white'
+    color: 'black'
   },
   buttonGroup: {
     display: 'flex',
@@ -44,7 +44,7 @@ const styles = {
   uploadBtn: {
     padding: '10px 20px',
     width: '20vw',
-    backgroundColor: '#971b55',
+    backgroundColor: '#6ea8d7',
     color: '#fff',
     border: 'none',
     borderRadius: '8px',
@@ -54,9 +54,9 @@ const styles = {
   chatBtn: {
     padding: '10px 20px',
     width: '20vw',
-    backgroundColor: '#971b55',
-    color: 'white',
-    border: '2px solid #971b55',
+    backgroundColor: 'white',
+    color: '#6ea8d7',
+    border: '2px solid #6ea8d7',
     borderRadius: '8px',
     cursor: 'pointer',
     fontSize: '1rem',
