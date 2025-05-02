@@ -42,3 +42,16 @@ body {
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }
+
+.customSearch {
+  background-color: '#971b55';
+  border: '1px solid #971b55';
+  border-radius: '10px';
+}
+
+.customSearch input {
+  background-color: '#971b55';
+  color: 'white';
+  border: 'none',
+}
+

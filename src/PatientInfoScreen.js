@@ -3,14 +3,15 @@ import React from 'react';
 const styles = {
   page: {
     height: '100vh',
+    width: '100vw',
     padding: '2rem',
-    backgroundColor: '#f0f4f8',
+    backgroundColor: 'white',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
   },
   card: {
-    backgroundColor: '#fff',
+    backgroundColor: 'white',
     padding: '2.5rem',
     borderRadius: '12px',
     boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1)',
@@ -21,11 +22,12 @@ const styles = {
   heading: {
     fontSize: '1.8rem',
     marginBottom: '1rem',
-    color: '#333',
+    color: 'black',
   },
   info: {
     fontSize: '1.2rem',
     margin: '0.5rem 0',
+    color: 'black'
   },
   buttonGroup: {
     display: 'flex',
@@ -41,7 +43,8 @@ const styles = {
   },
   uploadBtn: {
     padding: '10px 20px',
-    backgroundColor: '#3d4dd4',
+    width: '20vw',
+    backgroundColor: '#6ea8d7',
     color: '#fff',
     border: 'none',
     borderRadius: '8px',
@@ -50,9 +53,10 @@ const styles = {
   },
   chatBtn: {
     padding: '10px 20px',
-    backgroundColor: '#fff',
-    color: '#3d4dd4',
-    border: '2px solid #3d4dd4',
+    width: '20vw',
+    backgroundColor: 'white',
+    color: '#6ea8d7',
+    border: '2px solid #6ea8d7',
     borderRadius: '8px',
     cursor: 'pointer',
     fontSize: '1rem',
