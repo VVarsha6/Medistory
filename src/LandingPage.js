@@ -6,7 +6,7 @@ function LandingPage({ onStart, onCreatePatient }) {
       <div style={styles.waves}></div>
       <h1 style={styles.title}>Medistory</h1>
       <p style={styles.description}>
-        Your AI medical transcription companion. Upload audio or start chatting!
+      Where Every Patient Record Becomes a Clear Medical Story — Powered by AI
       </p>
       <div style={styles.buttonGroup}>
         <button onClick={onCreatePatient} style={styles.outlineButton}>
@@ -52,20 +52,20 @@ const styles = {
   outlineButton: {
     padding: '10px 20px',
     backgroundColor: '#fff',
-    color: '#3d4dd4',
-    border: '2px solid #3d4dd4',
+    color: '#6ea8d7',
+    border: '2px solid #6ea8d7',
     borderRadius: '8px',
     cursor: 'pointer',
-    fontSize: '1rem',
+    fontSize: '1.2rem',
   },
   primaryButton: {
     padding: '10px 20px',
-    backgroundColor: '#3d4dd4',
+    backgroundColor: '#6ea8d7',
     color: '#fff',
     border: 'none',
     borderRadius: '8px',
     cursor: 'pointer',
-    fontSize: '1rem',
+    fontSize: '1.2rem',
   },
 };
 

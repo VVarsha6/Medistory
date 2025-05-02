@@ -25,7 +25,7 @@ import './App.js';
       flexDirection: 'column',
       alignItems: 'center',
       justifyContent: 'center',
-      backgroundColor: '#3d4dd4',
+      //backgroundColor: '#3d4dd4',
       position: 'relative',
     },
     card: {

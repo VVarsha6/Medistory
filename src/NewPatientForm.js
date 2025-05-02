@@ -25,7 +25,7 @@ const NewPatientForm = ({ onBack }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Handle form submission logic here
-    alert("New Patient with PATIENTID Created!");
+    alert("New Patient with 11875 Created!");
   };
 
 
@@ -34,7 +34,7 @@ const NewPatientForm = ({ onBack }) => {
   };
   
 
-  const styles = {
+const  styles = {
     navbar: {
         width: '100%',
         display: 'flex',
@@ -52,20 +52,25 @@ const NewPatientForm = ({ onBack }) => {
       
       page: {
         display: 'flex',
+        font: 'Roboto',
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#fff',
+        //backgroundColor: '#222222',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroudImage: 'url("/Users/soujanya/Medistory/Medistory/public/bg.jpg")',
         position: 'relative',
       },
     card: {
       backgroundColor: '#f9f9f9',
-      padding: '6rem',
+      padding: '4rem',
       borderRadius: '16px',
       boxShadow: '0 10px 20px rgba(0,0,0,0.5)',
       textAlign: 'center',
       width: '100%',
-      maxWidth: '400px',
+      maxWidth: '350px',
     },
     title: {
       fontSize: '2.5rem',
@@ -74,14 +79,14 @@ const NewPatientForm = ({ onBack }) => {
       textAlign: 'center',
     },
     subtitle: {
-      fontSize: '1rem',
-      color: '#777',
+      fontSize: '1.2rem',
+      color: '#6ea8d7',
       marginBottom: '1.5rem',
     },
     input: {
       width: '100%',
-      padding: '0.75rem',
-      fontSize: '1rem',
+      padding: '0.45rem',
+      fontSize: '0.9rem',
       borderRadius: '8px',
       border: '1px solid #ddd',
       boxSizing: 'border-box',
@@ -89,13 +94,15 @@ const NewPatientForm = ({ onBack }) => {
     
     primaryButton: {
       width: '100%',
-      padding: '0.75rem',
-      backgroundColor: '#3d4dd4',
+      padding: '0.5rem 0.75rem',
+      backgroundColor: '#6ea8d7',
+      fontWeight: '700',
       color: '#fff',
-      border: '1px solid #3d4dd4', // optional to match input border style
+      font: 'Roboto',
+      border: '1px solid #6ea8d7', 
       borderRadius: '8px',
       cursor: 'pointer',
-      fontSize: '1rem',
+      fontSize: '1.2rem',
       boxSizing: 'border-box',
     },
     
@@ -104,7 +111,7 @@ const NewPatientForm = ({ onBack }) => {
         left: '1rem',
         backgroundColor: 'transparent',
         border: 'none',
-        color: '#3d4dd4',
+        color: '#6ea8d7',
         fontSize: '1.2rem',
         cursor: 'pointer',
       },
@@ -134,7 +141,7 @@ const NewPatientForm = ({ onBack }) => {
     
         <h2 style={styles.subtitle}>New Patient Form</h2>
 
-        <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+        <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '0.9rem' }}>
           <input
             type="text"
             name="firstName"
