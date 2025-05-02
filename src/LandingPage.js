@@ -53,6 +53,7 @@ const styles = {
     padding: '10px 20px',
     backgroundColor: '#fff',
     color: '#6ea8d7',
+    fontWeight: '600',
     border: '2px solid #6ea8d7',
     borderRadius: '8px',
     cursor: 'pointer',
@@ -65,6 +66,7 @@ const styles = {
     border: 'none',
     borderRadius: '8px',
     cursor: 'pointer',
+    fontWeight: '600',
     fontSize: '1.2rem',
   },
 };

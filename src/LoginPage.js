@@ -18,8 +18,8 @@ import './App.js';
   }
   const styles = {
     page: {
+      width: '100vw',
       height: '100vh',
-      width: '150vh',
       padding: '2rem',
       display: 'flex',
       flexDirection: 'column',
@@ -29,10 +29,10 @@ import './App.js';
       position: 'relative',
     },
     card: {
-      backgroundColor: 'white',
+      backgroundColor: '#f9f9f9',
       padding: '7rem',
       borderRadius: '16px',
-      boxShadow: '0 10px 20px rgba(0,0,0,0.05)',
+      boxShadow: '0 10px 20px rgba(0,0,0,0.07)',
       textAlign: 'center',
     },
     title: {
@@ -64,6 +64,7 @@ import './App.js';
       borderRadius: '8px',
       cursor: 'pointer',
       fontSize: '1rem',
+      fontWeight: '700',
     },
   };
   export default LoginPage;

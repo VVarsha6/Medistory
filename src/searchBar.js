@@ -83,7 +83,7 @@ const styles = {
     left: '1rem',
     backgroundColor: 'transparent',
     border: 'none',
-    color: '#6ea8d7',
+    color: 'white',
     fontSize: '1.2rem',
     cursor: 'pointer',
   },
