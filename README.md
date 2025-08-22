@@ -22,6 +22,7 @@ Medistory is an AI-driven clinical assistant that transforms unstructured patien
 - Enables hands-free, efficient documentation  
 
 ## System Architecture
+![Medistory System Architecture](architecture.png)
 
 **High-Level Workflow:**  
 Audio/Docs → Azure Blob Storage → Azure Function (Trigger)  
