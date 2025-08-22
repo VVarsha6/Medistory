@@ -68,10 +68,10 @@ Structured Output → MongoDB + Dashboard + Q&A Layer
 ## 👥 Team Medistory
 
 **Mentors**  
-Varsha Viswanathan · Asvataman Soundariyan
+Varsha · Asvataman 
 
 **Mentees**  
-Harshitha · Nithyashree · Leo · Soujanya · Sriman
+Harshitha · Soundariyan · Nithyashree · Leo · Soujanya · Sriman
 
 ## Built With
 
